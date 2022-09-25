@@ -1,7 +1,7 @@
 let response;
 
 exports.handler = async (event, handler) => {
-    const userID = "595.080.896-84";
+    const userID = event.queryStringParameters.customerId;
     var url = "https://challenge.hackathonbtg.com/customers/v1/personal/identifications"
     var organizationIds = []
     var data = ""
